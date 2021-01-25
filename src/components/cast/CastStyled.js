@@ -14,7 +14,7 @@ const CastWrapper = styled.div`
   .cast_item {
     overflow: hidden;
     margin: 10px 5px;
-    padding: 0 15px 15px 15px;
+    padding: 15px;
     width: 220px;
     border-radius: 10px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
