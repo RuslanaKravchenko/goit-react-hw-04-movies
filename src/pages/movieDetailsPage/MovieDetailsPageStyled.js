@@ -41,11 +41,15 @@ const MovieDetailsPageStyled = styled.div`
   }
 
   .details_image {
-    width: 300px;
-    margin-right: 20px;
+    width: 100;
 
     @media (max-width: 767px) {
       margin-bottom: 20px;
+    }
+
+    @media (mшт-width: 768px) {
+      width: 300px;
+      margin-right: 20px;
     }
   }
 
@@ -75,13 +79,15 @@ const MovieDetailsPageStyled = styled.div`
   }
   .details_genres-list {
     display: flex;
+    flex-wrap: wrap;
 
     @media (max-width: 767px) {
       margin-bottom: 20px;
     }
   }
   .details_genres-item {
-    margin-right: 10px;
+    margin: 5px;
+
     padding: 7px 7px;
     color: #5e6671;
     border: 1px solid #ff6b09;
