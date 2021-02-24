@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const PomePageStyled = styled.div`
-  padding-top: 30px;
+  padding: 30px 0;
+
   text-align: center;
 
   .home-page_title {

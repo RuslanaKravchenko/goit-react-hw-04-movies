@@ -46,7 +46,7 @@ const CastWrapper = styled.div`
     text-align: center;
     color: #ff6b09;
     border: 1px solid #ff6b09;
-    border-radius: 4px;
+    border-radius: 30px;
     text-decoration: none;
     cursor: pointer;
     font-family: inherit;

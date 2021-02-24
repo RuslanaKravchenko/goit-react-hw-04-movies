@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 const MovieDetailsPageStyled = styled.div`
-  padding: 20px 20px 0 20px;
+  padding: 20px 15px;
+  @media (min-width: 768px) {
+    padding: 30px 34px;
+  }
 
   .details_btn {
     display: block;
@@ -13,7 +16,7 @@ const MovieDetailsPageStyled = styled.div`
     text-align: center;
     color: #ff6b09;
     border: 1px solid #ff6b09;
-    border-radius: 4px;
+    border-radius: 30px;
     text-decoration: none;
     cursor: pointer;
     font-family: inherit;
@@ -31,13 +34,19 @@ const MovieDetailsPageStyled = styled.div`
   }
 
   .details_wrapper {
-    display: flex;
-    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      display: flex;
+      margin-bottom: 20px;
+    }
   }
 
   .details_image {
     width: 300px;
     margin-right: 20px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 
   .details_title {
@@ -66,13 +75,21 @@ const MovieDetailsPageStyled = styled.div`
   }
   .details_genres-list {
     display: flex;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   .details_genres-item {
     margin-right: 10px;
-    padding: 5px 10px;
+    padding: 7px 7px;
     color: #5e6671;
     border: 1px solid #ff6b09;
     border-radius: 20px;
+
+    @media (min-width: 768px) {
+      padding: 5px 10px;
+    }
   }
 
   .details-nav_list {
