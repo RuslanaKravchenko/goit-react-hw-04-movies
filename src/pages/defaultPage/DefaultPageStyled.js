@@ -16,8 +16,10 @@ const DefaultPageStyled = styled.div`
   }
 
   .default_link {
-    text-decoration: none;
     color: #ff6b09;
+    & span {
+      margin: 0 5px;
+    }
   }
 `;
 

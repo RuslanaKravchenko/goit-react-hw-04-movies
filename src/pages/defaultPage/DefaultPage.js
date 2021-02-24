@@ -13,10 +13,9 @@ const DefaultPage = () => (
       width="320"
     />
     <p className="default_text">
-      Oops, you seem to be lost. Here is the{' '}
+      Oops, you seem to be lost. Here is the
       <Link className="default_link" to="/">
-        {' '}
-        link{' '}
+        <span>link</span>
       </Link>
       to the home page.
     </p>

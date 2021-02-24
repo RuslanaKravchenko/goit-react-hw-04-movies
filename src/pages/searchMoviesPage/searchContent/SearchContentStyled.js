@@ -22,6 +22,7 @@ const SearchContentStyled = styled.div`
 
   .search-content_item {
     width: 300px;
+    background-color: #fff;
     overflow: hidden;
     margin: 0 auto;
     padding-bottom: 15px;

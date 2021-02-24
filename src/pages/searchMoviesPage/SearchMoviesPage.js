@@ -7,6 +7,7 @@ import Spinner from '../../components/loader/Loader';
 
 import { fetchMoviesWithQuery } from '../../services/movieApi';
 import getQueryParams from '../../utils/getQueryParams';
+import SearchMoviesWrapperStyled from './SearchMoviesWrapperStyled';
 
 const initialState = {
   movies: [],
@@ -104,9 +105,11 @@ const SearchMoviesPage = () => {
   return (
     <>
       <SearchForm onSubmit={getMovies} />
-      {movies.length > 0 && <SearchContent movies={movies} query={query} />}
+      <SearchMoviesWrapperStyled>
+        {movies.length > 0 && <SearchContent movies={movies} query={query} />}
+        {movies.length > 0 && <Button onFetchMovies={loadMore} />}
+      </SearchMoviesWrapperStyled>
       {loading && <Spinner />}
-      {movies.length > 0 && <Button onFetchMovies={loadMore} />}
     </>
   );
 };
