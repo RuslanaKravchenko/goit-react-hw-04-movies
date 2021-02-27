@@ -66,11 +66,11 @@ const MovieDetailsPage = () => {
         ></img>
         <div>
           <h2 className="details_title">
-            <span className="details_title-text">{title ? title : name}</span>(
-            {release_date && release_date.slice(0, 4)})
+            <span className="details_title-text">{title ? title : name}</span>
+            {release_date && <span>({release_date.slice(0, 4)})</span>}
           </h2>
           <p className="details_vote">
-            User score: <span>{vote_average * 10}%</span>
+            User score: {vote_average && <span>{vote_average * 10}%</span>}
           </p>
           <h3 className="details_overview-title">Overview</h3>
           <p className="details_overview-text">{overview}</p>
